@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Color(0xffecfafd),
+        // scaffoldBackgroundColor: Color(0xff7BD2F6),
       ),
       // home: MyHomePage(title: 'Flutter Demo Home Page'),
       initialRoute: '/dashboard',

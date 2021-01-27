@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:kei_ss_barcodescanner/component/exportComponent.dart';
+import 'package:kei_ss_barcodescanner/helper/component/exportComponent.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 import 'package:flutter/services.dart';
 
@@ -65,7 +65,7 @@ class _ScannerScreenState extends State<ScannerScreen> {
                 child: Center(
                   child: (result != null)
                       ? Text(
-                          'Barcode Type: ${describeEnum(result.format)}   Data: ${EncryptDecrypt.decrypt(result.code)}')
+                          'Barcode Type: ${describeEnum(result.format)}   Data: ${result.code}')
                       : Text('Scan a code'),
                 ),
               )

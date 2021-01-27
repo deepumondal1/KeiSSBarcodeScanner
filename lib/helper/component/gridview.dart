@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kei_ss_barcodescanner/component/exportComponent.dart';
+import 'package:kei_ss_barcodescanner/helper/component/exportComponent.dart';
 
 class GridViewCreator extends StatefulWidget {
   final List<Widget> menuIconWidgets;

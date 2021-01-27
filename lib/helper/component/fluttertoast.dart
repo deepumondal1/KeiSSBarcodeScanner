@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class FToast{
-  fcreatetoast(plainstr){
+  static fcreatetoast({@required String msg, Color backgroundColor}){
     return Fluttertoast.showToast(
-      msg: plainstr,
-      toastLength: Toast.LENGTH_LONG,
+      msg: msg,
+      toastLength: Toast.LENGTH_SHORT,
       gravity: ToastGravity.CENTER,
       timeInSecForIosWeb: 1,
-      backgroundColor: Colors.red,
+      backgroundColor: backgroundColor ?? Colors.red,
       textColor: Colors.white,
       fontSize: 16.0
     );
